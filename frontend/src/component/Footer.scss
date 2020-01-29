@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.1rem 0;
+  background-color: #f0dd92;
+  a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  img {
+    width: 4rem;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 18%;
+  }
+}
