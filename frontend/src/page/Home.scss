@@ -1,0 +1,42 @@
+.home {
+  min-height: calc(100vh - 18rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .bannerImg {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    h2 {
+      position: absolute;
+      font-size: 50em;
+      font-family: "Bebas Neue", cursive;
+      color: white;
+      top: 1.5em;
+      left: 0.3em;
+      width: 20%;
+    }
+  }
+  .title {
+    margin: 4rem 0;
+    width: 50rem;
+  }
+  .adopteContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    img {
+      width: 65%;
+    }
+    p {
+      font-size: 1.5rem;
+      text-align: left;
+      height: 100%;
+      margin-left: 15px;
+      width: 35%;
+      line-height: 1.8rem;
+    }
+  }
+}
