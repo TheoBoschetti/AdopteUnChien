@@ -7,9 +7,16 @@ const { backendApi } = require("../conf");
 export default function DogPageByid(props) {
   const [dogInfo, setDogInfo] = useState([]);
   const [displayForm, setDisplayForm] = useState(false);
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors, reset } = useForm();
 
-  const onSubmit = data => console.log(data);
+  const onSubmit = formData => {
+    Axios.post(`${backendApi}/dog/requestAdoption`, {
+      data: formData,
+      dogInfo: { ...dogInfo }
+    });
+    alert("Demande d'adoption envoyée avec succés !");
+    reset();
+  };
 
   useEffect(() => {
     Axios.get(`${backendApi}/dog/${props.match.params.id}`).then(res => {
