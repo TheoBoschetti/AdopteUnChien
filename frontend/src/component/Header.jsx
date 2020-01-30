@@ -6,14 +6,16 @@ import "./Header.scss";
 export default function Header() {
   return (
     <div className="header">
-      <div>
+      <div className="navbar">
         <Link to={"/chien"}>Trouve un meilleur ami</Link>
         <Link to={"/contact"}>Contact</Link>
         <Link to={"/partenaire"}>Nos partenaires</Link>
       </div>
-      <div>
-        <h1>Adopte un chien</h1>
-        <img src="/logoChien.svg" alt="logo" />
+      <div className="siteTitle">
+        <Link to={"/"}>
+          <h1>Adopte un chien</h1>
+          <img src="/logoChien.svg" alt="logo" />
+        </Link>
       </div>
     </div>
   );
