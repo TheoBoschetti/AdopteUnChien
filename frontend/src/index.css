@@ -24,6 +24,10 @@ time, mark, audio, video {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

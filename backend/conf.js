@@ -1,6 +1,7 @@
 require("dotenv").config();
 const mysql = require("mysql");
 const port = process.env.BACKEND_PORT;
+const WebMasterEmail = process.env.WEB_MASTER_EMAIL;
 
 //Mysql
 const connection = mysql.createPool({
@@ -11,4 +12,4 @@ const connection = mysql.createPool({
   database: process.env.DB_DATABASE
 });
 
-module.exports = { connection, port };
+module.exports = { connection, port, WebMasterEmail };

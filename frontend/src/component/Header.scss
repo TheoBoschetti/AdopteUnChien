@@ -5,9 +5,11 @@
   width: 100%;
   padding: 2rem 0;
   background-color: #f0dd92;
-  a {
-    text-decoration: none;
-    color: black;
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar a {
     margin: 0 10px;
     font-weight: bold;
     font-size: 2rem;
@@ -19,7 +21,7 @@
     width: 7rem;
     margin: 0 10px;
   }
-  div {
+  .siteTitle a {
     display: flex;
     align-items: center;
   }
