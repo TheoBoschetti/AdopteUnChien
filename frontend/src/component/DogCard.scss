@@ -1,0 +1,31 @@
+.dogCard {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 40rem;
+  background-color: #f0dd92;
+  box-shadow: 0px 4px 10px #f0dd92;
+  border-radius: 8px;
+  &:hover {
+    transform: scale(1.05);
+  }
+  img {
+    height: 30rem;
+    border-radius: 8px 8px 0 0;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    p:first-child {
+      font-size: 3rem;
+      font-family: "Gochi Hand", cursive;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.2rem 0;
+    }
+  }
+}

@@ -3,14 +3,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 2.4rem 0;
+  padding: 2rem 0;
   background-color: #f0dd92;
   a {
     text-decoration: none;
     color: black;
     margin: 0 10px;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   h1 {
     font-size: 4.5rem;
@@ -22,17 +22,5 @@
   div {
     display: flex;
     align-items: center;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 30%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  html {
-    font-size: 18%;
   }
 }
