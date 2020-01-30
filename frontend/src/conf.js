@@ -1,4 +1,4 @@
 require("dotenv").config();
-const backendApi = process.env.BACKEND_API;
+const backendApi = process.env.REACT_APP_API;
 
 module.exports = { backendApi };

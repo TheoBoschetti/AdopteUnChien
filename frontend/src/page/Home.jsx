@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./Home.scss";
 import axios from "axios";
-import { backendApi } from "../../conf";
+import DogCard from "../component/DogCard";
+
+const { backendApi } = require("../conf");
 
 export default function Home() {
   const [dogInfos, setDogInfos] = useState([]);
 
   useEffect(() => {
     axios.get(`${backendApi}/dog?home=true`).then(res => {
-      setDogInfos(res.data).catch(err => {
-        alert(err.response.data);
-      });
+      setDogInfos(res.data);
     });
   }, []);
 
@@ -47,6 +47,11 @@ export default function Home() {
         src="/titreHome2.png"
         alt="Les nouveaux arrivants"
       />
+      <div className="dogCardContainer">
+        {dogInfos.map((dog, keyChain) => {
+          return <DogCard key={keyChain} dogInfo={dog} />;
+        })}
+      </div>
     </div>
   );
 }
