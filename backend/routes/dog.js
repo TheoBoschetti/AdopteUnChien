@@ -15,4 +15,17 @@ router.get("/", (req, res) => {
   });
 });
 
+//Get dog by id
+router.get("/:id", (req, res) => {
+  connection.query(
+    "SELECT * FROM dog WHERE id=? ",
+    [req.params.id],
+    (err, result) => {
+      if (err)
+        return res.status(500).send("Error has occured during the operation.");
+      return res.status(200).json(result);
+    }
+  );
+});
+
 module.exports = router;
